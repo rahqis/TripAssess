@@ -47,7 +47,7 @@ def gatherRelationArticleDescriptions(relationsArticles):
             relationsDescriptions += source["title"]
         if type(source["content"]) == str:
             relationsDescriptions += source["content"]
-        if type(source["decription"]) == str:
+        if type(source["description"]) == str:
             relationsDescriptions += source["description"]
     return relationsDescriptions
 
