@@ -1,40 +1,21 @@
-# Django Local Library
+## Inspiration
+COVID-19 showed us how vulnerable we can be when traveling and how dangerous many nations are, either due to public health crises or political instability. So we thought it would be important that when traveling goes back to a new normal, that we can prepare and check any dangers in our country.
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/django-locallibrary-tutorial)
+## What it does
+Travel Assess takes in the user's current nation they reside and the country they wish to travel. Then, the program searches through the web, search any top and relevant news, along with any news on the relationship of the two countries. From their, the program reads through the contents of the news it gathers to determine the overall sentiment of that nation, Too many negative or dangerous connotation words will trigger a "Danger" response, and vice versa. The program then reports to the user how safe their destination currently is, along with the top headlines. 
 
-Tutorial "Local Library" website written in Django.
+## How I built it
+The program is built in python, with the user interface being built with the streamlit API. The natural language processing is determined by the nltk and the vaderSentiment API's. The newsapi-python API gathers the news articles based off three different categories: top headlines of the destinations, all relevant news on destination, and all top headlines relating to the source and destination country relations. 
 
-For detailed information about this project see the associated [MDN tutorial home page](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Tutorial_local_library_website).
+## Challenges I ran into
+A few challenges we ran into include the webscrapping with newsapi-python as it limits how many requests can be pulled each day. Learning the nltk API also had some issues, as it was difficult to pull the contents from the news in a multidimensional array and to find its overall sentiment. 
+Other issues included getting headlines to appear in streamlit, images of articles not showing up, and creating an algorithm that determines the sentiment of the news to determine how safe it was to travel.
 
-## Overview
+## Accomplishments that I'm proud of
+I'm most proud of the ease of use a user has with the program. All they have to do is input their country and destination and the program does all the heavy work for them, giving them information they could take hours on their own.
 
-This web application creates an online catalog for a small local library, where users can browse available books and manage their accounts.
+## What I learned
+We learned how useful and powerful APIs work and ways to utilize them in very applicable and unique ways. Learning the nltk and newsapi-python APIs are extraordinarily useful for gathering and analyzing string type data. 
 
-The main features that have currently been implemented are:
-
-* There are models for books, book copies, genre, language and authors.
-* Users can view list and detail information for books and authors.
-* Admin users can create and manage models. The admin has been optimised (the basic registration is present in admin.py, but commented out).
-* Librarians can renew reserved books
-
-![Local Library Model](https://raw.githubusercontent.com/mdn/django-locallibrary-tutorial/master/catalog/static/images/local_library_model_uml.png)
-
-
-## Quick Start
-
-To get this project up and running locally on your computer:
-1. Set up the [Python development environment](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/development_environment).
-   We recommend using a Python virtual environment.
-1. Assuming you have Python setup, run the following commands (if you're on Windows you may use `py` or `py -3` instead of `python` to start Python):
-   ```
-   pip3 install -r requirements.txt
-   python3 manage.py makemigrations
-   python3 manage.py migrate
-   python3 manage.py collectstatic
-   python3 manage.py test # Run the standard tests. These should all pass.
-   python3 manage.py createsuperuser # Create a superuser
-   python3 manage.py runserver
-   ```
-1. Open a browser to `http://127.0.0.1:8000/admin/` to open the admin site
-1. Create a few test objects of each type.
-1. Open tab to `http://127.0.0.1:8000` to see the main site, with your new objects.
+## What's next for Trip Assess
+Future features of Trip Assess we hope to see is creating user profiles, trip cost calculator, and ways to share with travel agencies to implement in their own businesses.
