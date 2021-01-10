@@ -20,5 +20,5 @@ We learned how useful and powerful APIs work and ways to utilize them in very ap
 ## What's next for Trip Assess
 Future features of Trip Assess we hope to see is creating user profiles, trip cost calculator, and ways to share with travel agencies to implement in their own businesses.
 
-##Video Demo
+## Video Demo
 https://youtu.be/ps_FupKjdTM
