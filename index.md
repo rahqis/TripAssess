@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## This page is used as a landing page for Trip Assess, and is being used for testing CI tools only
 
 You can use the [editor on GitHub](https://github.com/rahqis/TripAssess/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
